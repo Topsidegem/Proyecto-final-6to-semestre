@@ -5,19 +5,19 @@ using UnityEngine.InputSystem;
 
 public class BButon : MonoBehaviour
 {
-    [SerializeField] GameObject menuBButton;
-    [SerializeField] InputActionProperty bButon;
+    //[SerializeField] GameObject menuBButton;
+    //[SerializeField] InputActionProperty bButon;
 
 
-    void Start(){
-        bButon.action.performed += MenuONOff;
-    }
+    //void Start(){
+    //    bButon.action.performed += MenuONOff;
+    //}
 
-    void Update() {
+    //void Update() {
         
-    }
+    //}
 
-    void MenuONOff(InputAction.CallbackContext context) {
-        menuBButton.SetActive(!menuBButton.activeSelf);
-    }
+    //void MenuONOff(InputAction.CallbackContext context) {
+    //    menuBButton.SetActive(!menuBButton.activeSelf);
+    //}
 }
