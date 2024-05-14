@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PuzzlePortales : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class PuzzlePortales : MonoBehaviour
     public GameObject trofeo2;
     public GameObject trofeo3;
     public GameObject puerta;
+    public GameObject canvas;
+    public TextMeshProUGUI textMeshPro;
 
     public void prenderPortal2()
     {
@@ -118,5 +121,7 @@ public class PuzzlePortales : MonoBehaviour
         puerta.transform.position = new Vector3(0f, 90f, 0f);
         trofeo2.SetActive(true);
         trofeo3.SetActive(true);
+        canvas.SetActive(true);
+        textMeshPro.text = "Trofeos Obtenidos 3/5";
     }
 }
