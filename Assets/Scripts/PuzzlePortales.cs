@@ -15,6 +15,7 @@ public class PuzzlePortales : MonoBehaviour
     public GameObject button1;
     public GameObject button2;
     public GameObject trofeo2;
+    public GameObject trofeo3;
     public GameObject puerta;
 
     public void prenderPortal2()
@@ -112,14 +113,10 @@ public class PuzzlePortales : MonoBehaviour
         button2.SetActive(false);
     }
 
-    //public void prenderPalanca3()
-    //{
-    //    portal3.SetActive(true);
-    //}
-
     public void abrirPuerta()
     {
         puerta.transform.position = new Vector3(0f, 90f, 0f);
         trofeo2.SetActive(true);
+        trofeo3.SetActive(true);
     }
 }
