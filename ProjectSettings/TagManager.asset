@@ -8,6 +8,8 @@ TagManager:
   - Bullet
   - Caja
   - Trophy
+  - Friend
+  - Friend2
   layers:
   - Default
   - TransparentFX
