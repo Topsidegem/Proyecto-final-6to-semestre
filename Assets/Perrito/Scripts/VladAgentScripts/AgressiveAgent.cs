@@ -37,12 +37,6 @@ public class AgressiveAgent : BasicAgent {
         AgressiveAgentStates newState;
         if (target == null) {
             newState = AgressiveAgentStates.Wander;
-            //if (Vector3.Distance(transform.position, m_area.position) >= 16f)
-            //{
-            //    newState = AgressiveAgentStates.Return;
-            //    print("ya regresa");
-            //}
-
         } else if (isInTheArea) {
             newState = AgressiveAgentStates.Pursuit;
             if (Vector3.Distance(transform.position, target.position) < stopThreshold) {
@@ -150,7 +144,6 @@ public class AgressiveAgent : BasicAgent {
         if (Vector3.Distance(transform.position, target.position) < stopThreshold) {
             target = null;
         }
-
         rb.velocity = SteeringBehaviours.seek(this, target.position);
     }
 

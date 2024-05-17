@@ -7,13 +7,12 @@ public class Area : MonoBehaviour
     [SerializeField] AgressiveAgent m_agent;
 
     private void Start() {
-        //m_agent = GameObject.Find("Zombie1").GetComponent<AgressiveAgent>();
+        m_agent = GameObject.Find("Badcat").GetComponent<AgressiveAgent>();
     }
 
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Player")) {
             m_agent.turnbool(other.transform);
-            print("entro");
         }
     }
 
@@ -21,7 +20,6 @@ public class Area : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             m_agent.turnbool(this.transform);
-            print("salio");
         }
     }
 }

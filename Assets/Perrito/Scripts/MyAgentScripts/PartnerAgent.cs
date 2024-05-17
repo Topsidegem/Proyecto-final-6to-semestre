@@ -38,7 +38,7 @@ public class PartnerAgent : BasicAgent {
         else
         {
             newState = PartnerAgentStates.Pursuit;
-            if (Vector3.Distance(transform.position,target.position) < stopThreshold)
+            if (Vector3.Distance(transform.position, target.position) < stopThreshold)
             {
                 newState = PartnerAgentStates.None;
             }
